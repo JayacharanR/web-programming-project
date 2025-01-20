@@ -6,23 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<header>
     <center>
         <div class="title">
-            <img src="Screenshot From 2025-01-19 15-07-46.png">
-            Ed Electronic
+            <img src="Screenshot From 2025-01-19 15-07-46.png" style="border-radius: 40px; padding-left: 8px;">
+            <span style="padding-right: 225px;color: white;">Ed Electronic</span>
+            <span class="bar_content" align="left"><a href="Sign.html">Sign In</a></span>
         </div>
     </center>
     <div class="bar">
-        <span class="bar-content"><a href="main.html">Home</a></span>
-        <span class="bar_content"><a href="about.html">About</a></span>
+        <span class="bar_content"><a href="main.html">Home</a></span>
         <span class="bar_content"><a href="Learn.html">Learn</a></span>
-        <span class="bar_content"><a href="Quiz.html">Quiz</a></span>
-        <span class="bar_content" align="left"><a href="Sign.html">Sign In</a></span>
+        <span class="bar_content"><a href="Quiz.html">Take a Quiz!</a></span>
+        <span class="bar_content"><a href="about.html#feedback">Feedback</a></span>
+        <span class="bar_content"><a href="about.html#contact">Contact Us</a></span>
+        <span class="bar_content"><a href="about.html">About</a></span>
     </div>
-    <div style="color: black;font-size: 30px;">
-        <span style="width: 40%;">
-        <h1 style="color: black;font-size: 100px;">Laptop Contents</h1>
+</header>
+
+<body>
+    <div style="color: black;font-size: 30px; display: flex; align-items: center;justify-content: center;">
+        <span style="width: 40%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); border-radius: 10px; background-color: #f0ffe1;">
+        <h1 style="color: black;font-size: 75px; ">Laptop Contents</h1>
         <ul>
             <li><a href="#processor">Processor</a></li>
             <li><a href="#ram">RAM</a></li>
@@ -32,11 +38,12 @@
             <li><a href="battery">Battery</a></li>
         </ul>
         </span>
-        <span>
+        <span style="padding-left: 20px;">
             <video width="720" height="720" controls >
                 <source src="47217-450995795_medium.mp4" type="video/mp4">
             </video>
         </span>
+        
     </div>
     
     <table>
@@ -52,7 +59,8 @@
 
         <tr>
             <th>
-                <img src="Untitled.jpg" height="600px" width="700px" style="border-radius: 50px;">
+                <img src="Untitled.jpg" height="600px" width="700px" style="border-radius: 50px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);padding: 20px;
+    margin: 20px;">
             </th>
             <th id="ram">
                 <h1 style="color: royalblue;">RAM</h1>
@@ -64,35 +72,42 @@
         </tr>
 
         <tr>
-            <th class="processor" style="color: black;">
-                <h1 style="color: royalblue;">Processor</h1>
+            <th id="processor" style="color: black;">
+                <h1 style="color: royalblue;">Storage</h1>
 
-                <p style="color: black;">A Processor, also known as a CPU (Central Processing Unit), is the brain of a computer or electronic device, responsible for executing instructions and performing calculations. It interprets basic arithmetic, logic, control, and input/output (I/O) operations specified by the program instructions. The performance of a processor is measured in terms of its clock speed (usually in GHz) and the number of cores it contains. Modern processors often come with multiple cores, allowing them to perform several tasks simultaneously, which significantly enhances multitasking and overall system performance.
-                </p>
-                Processors have evolved from simple single-core designs to sophisticated multi-core architectures. These advancements have enabled processors to handle more complex tasks, such as gaming, video editing, and artificial intelligence applications. Furthermore, features like hyper-threading, cache memory, and integrated graphics have contributed to the increased efficiency and speed of modern CPUs. The choice of a processor is crucial for determining a device's capability and performance, making it a key consideration for users when purchasing computers, laptops, or mobile devices.</th>
-            <th><img src="__S3__a44f77ae-f909-4135-b3f3-c10485d308e0.png" width="700px" height="700px" style="border-radius: 50%;"></th>
+                <p style="color: black;text-align: justify;">Storage refers to the components in a computer or electronic device that retain data for immediate or future use. It can be broadly categorized into primary storage, like RAM (Random Access Memory), which temporarily holds data for quick access by the processor, and secondary storage, such as hard drives (HDDs) and solid-state drives (SSDs), which permanently store data. Storage is crucial for saving files, applications, and operating system data, ensuring that information persists even when the device is powered off.
+                    <br>
+                    <br>
+                    Modern devices use various storage technologies. HDDs, known for their larger capacities at lower costs, are commonly used in traditional desktops and servers. SSDs, on the other hand, are faster, more durable, and energy-efficient, making them ideal for laptops, tablets, and smartphones. Additionally, cloud storage has become increasingly popular, offering users the ability to store and access data over the internet, enhancing flexibility and data security.</th>
+            <th><img src="__S3__a44f77ae-f909-4135-b3f3-c10485d308e0.png" width="700px" height="700px" style="border-radius: 50%;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);padding: 20px;
+    margin: 20px;"></th>
         </tr>
 
         <tr>
             <th>
                 <img src="Untitled.jpg" height="600px" width="700px" style="border-radius: 50px;">
             </th>
-            <th class="ram">
-                <h1 style="color: royalblue;">RAM</h1>
-                <p>RAM (Random Access Memory) is a type of volatile memory used by computers and other devices to store data that is actively being used or processed. Unlike storage devices such as hard drives or SSDs, RAM is much faster but only retains data temporarily while the device is powered on. Once the device is turned off, all data in RAM is lost. This makes RAM crucial for running applications, as it provides quick read and write access to a temporary workspace, enabling smooth and efficient performance.
+            <th id="ram">
+                <h1 style="color: royalblue;">Operating System</h1>
+                <p>An Operating System (OS) is the foundational software that manages the hardware and software resources of a computer or electronic device. It provides an interface between the user and the device's hardware, enabling users to interact with the system through graphical user interfaces (GUIs) or command-line interfaces (CLIs). Common tasks performed by an OS include managing files, running applications, and controlling peripherals like printers and external drives.
+                    <br><br>
+                    Popular operating systems include Windows, macOS, **Linux**, Android, and iOS. Each OS is designed to optimize the performance of the device it runs on, offering features like multitasking, memory management, and security. The choice of an operating system often depends on the user's needs, such as the type of device, software compatibility, and personal preferences. In addition to personal computing, operating systems play a crucial role in servers, embedded systems, and IoT devices, ensuring stability and efficiency across various platforms.
+
                 </p>
-                The amount of RAM in a device affects its ability to handle multitasking and run memory-intensive applications. More RAM allows a device to manage more data simultaneously, improving performance when switching between programs or running complex software like video editing tools or games. The speed of RAM, measured in MHz, also plays a role in how quickly data can be accessed and processed, impacting the overall responsiveness of the system. Modern devices typically come with several gigabytes of RAM to support the demands of current software and operating systems.
             </th>
             
         </tr>
 
         <tr>
-            <th class="processor" style="color: black;">
-                <h1 style="color: royalblue;">Processor</h1>
+            <th id="processor" style="color: black;">
+                <h1 style="color: royalblue;">Display</h1>
 
-                <p style="color: black;">A Processor, also known as a CPU (Central Processing Unit), is the brain of a computer or electronic device, responsible for executing instructions and performing calculations. It interprets basic arithmetic, logic, control, and input/output (I/O) operations specified by the program instructions. The performance of a processor is measured in terms of its clock speed (usually in GHz) and the number of cores it contains. Modern processors often come with multiple cores, allowing them to perform several tasks simultaneously, which significantly enhances multitasking and overall system performance.
+                <p style="color: black;">
+                    The display of an electronic device is the primary interface through which users view and interact with the system. It presents visual information, such as text, images, and videos, generated by the device’s graphics hardware. Displays come in various forms, including LCD (Liquid Crystal Display), LED (Light Emitting Diode), OLED (Organic Light Emitting Diode), and AMOLED (Active Matrix OLED), each offering different levels of brightness, color accuracy, and energy efficiency.
+                    <br><br>
+                    Modern displays vary in size, resolution, and aspect ratio, catering to different needs. For instance, high-resolution displays like 4K or Retina screens provide sharper images and are ideal for detailed tasks such as graphic design or video editing. Touchscreen displays, commonly found in smartphones, tablets, and some laptops, allow for direct interaction with the interface, enhancing usability and convenience. The quality and type of display significantly impact the user experience, making it a critical component in device design and selection.
                 </p>
-                Processors have evolved from simple single-core designs to sophisticated multi-core architectures. These advancements have enabled processors to handle more complex tasks, such as gaming, video editing, and artificial intelligence applications. Furthermore, features like hyper-threading, cache memory, and integrated graphics have contributed to the increased efficiency and speed of modern CPUs. The choice of a processor is crucial for determining a device's capability and performance, making it a key consideration for users when purchasing computers, laptops, or mobile devices.</th>
+                </th>
             <th><img src="__S3__a44f77ae-f909-4135-b3f3-c10485d308e0.png" width="700px" height="700px" style="border-radius: 50%;"></th>
         </tr>
 
@@ -100,11 +115,13 @@
             <th>
                 <img src="Untitled.jpg" height="600px" width="700px" style="border-radius: 50px;">
             </th>
-            <th class="ram">
-                <h1 style="color: royalblue;">RAM</h1>
-                <p>RAM (Random Access Memory) is a type of volatile memory used by computers and other devices to store data that is actively being used or processed. Unlike storage devices such as hard drives or SSDs, RAM is much faster but only retains data temporarily while the device is powered on. Once the device is turned off, all data in RAM is lost. This makes RAM crucial for running applications, as it provides quick read and write access to a temporary workspace, enabling smooth and efficient performance.
+            <th id="ram">
+                <h1 style="color: royalblue;">Battery</h1>
+                <p>
+                    The battery is a crucial component of portable electronic devices, providing the power needed for operation without a direct connection to an electrical outlet. It allows devices such as laptops, tablets, and smartphones to be mobile and functional over extended periods. Modern batteries are typically lithium-ion (Li-ion) or lithium-polymer (Li-Po) due to their high energy density, lightweight, and ability to be recharged multiple times without significant performance loss.
+
+Battery performance is measured in terms of capacity (mAh or Wh), which indicates how long a device can operate before needing a recharge, and charging cycles, which define the number of complete charge-discharge cycles a battery can undergo before its capacity significantly decreases. Innovations in battery technology focus on enhancing energy efficiency, reducing charging times, and increasing overall lifespan to support the growing demand for high-performance mobile devices.
                 </p>
-                The amount of RAM in a device affects its ability to handle multitasking and run memory-intensive applications. More RAM allows a device to manage more data simultaneously, improving performance when switching between programs or running complex software like video editing tools or games. The speed of RAM, measured in MHz, also plays a role in how quickly data can be accessed and processed, impacting the overall responsiveness of the system. Modern devices typically come with several gigabytes of RAM to support the demands of current software and operating systems.
             </th>
             
         </tr>
@@ -125,7 +142,7 @@
         </center>
     </h1>
     <center>
-        <p>&copy; Jayacharan , 23BDS0065</p>
+        <p style="margin: 0px; font-size: 25px;">&copy; Jayacharan , 23BDS0065</p>
     </center>
 </footer>
 </html>

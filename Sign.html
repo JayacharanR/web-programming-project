@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Ed Electronic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #de5e3e, #64b7ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .signin-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            color: #333;
+        }
+        .signin-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .signin-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #283E51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .signin-btn:hover {
+            background-color: #4B79A1;
+        }
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .forgot-password a {
+            color: #4B79A1;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="signin-container">
+        <div>
+            <img src="Screenshot From 2025-01-19 15-07-46.png" style="border-radius: 30px;">
+        </div>
+        <h2 style="color: #31b0ff;">Sign In to Ed Electronic!</h2>
+        <form action="main.html">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <input type="submit" value="Sign In" class="signin-btn">
+        </form>
+        <p class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -17,7 +17,10 @@ footer{
     height: 100px;
     color: white;
     margin: 0px;
-    background-color: #387780;
+    background-color: #f15151;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #processor
@@ -41,6 +44,12 @@ footer{
     background-color: #ffd97f;
     padding-top: 1em;
     padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 a:hover{
@@ -67,7 +76,7 @@ a:link{
 {
     font-size: 25px;
     padding: 0.5em;
-    margin: 1em;
+    margin: 0px;
     text-align: center;
     background-color: #ffffff;
     border-radius: 60px;
@@ -86,22 +95,22 @@ a:link{
 }
 
 
-.container {
-    background-color: white;
+#container {
+    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 600px;
 }
 
 .introduction {
-    background-color: #f4f4f9;
+    background-color: #ffefef;
     padding: 20px;
     margin: 20px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     height: auto;
 }
 
@@ -130,4 +139,58 @@ a:link{
 .reset-btn {
     background-color: #f44336;
     color: white;
+}
+
+
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.contact-us h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+.contact-us p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    width: 10%;
+    padding: 12px;
+    margin: 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    resize: vertical;
 }

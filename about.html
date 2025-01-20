@@ -8,23 +8,32 @@
     
     
 </head>
-<body>
+
+<header>
     <center>
         <div class="title">
-            <img src="Screenshot From 2025-01-19 15-07-46.png">
-            Ed Electronic
+            <img src="Screenshot From 2025-01-19 15-07-46.png" style="border-radius: 40px; padding-left: 8px;">
+            <span style="padding-right: 225px;color: white;">Ed Electronic</span>
+            <span class="bar_content" align="left"><a href="Sign.html">Sign In</a></span>
         </div>
     </center>
     <div class="bar">
-        <span class="bar-content"><a href="main.html">Home</a></span>
-        <span class="bar_content"><a href="about.html">About</a></span>
+        <span class="bar_content"><a href="main.html">Home</a></span>
         <span class="bar_content"><a href="Learn.html">Learn</a></span>
-        <span class="bar_content"><a href="Quiz.html">Quiz</a></span>
-        <span class="bar_content" align="left"><a href="Sign.html">Sign In</a></span>
-
+        <span class="bar_content"><a href="Quiz.html">Take a Quiz!</a></span>
+        <span class="bar_content"><a href="about.html#feedback">Feedback</a></span>
+        <span class="bar_content"><a href="about.html#contact">Contact Us</a></span>
+        <span class="bar_content"><a href="about.html">About</a></span>
     </div>
-    <div class="about" style="font-size: 20px; padding: 100px; text-align: justify;">
+</header>
+
+<body >
+    <div>
         <center style="font-size: 25px;"><h1>About Us</h1></center>
+    </div>
+    <div style="font-size: 20px; padding: 100px; text-align: justify;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);padding: 20px;
+    margin: 20px;background-color: #ffefef">
+        
 
         Welcome to <strong>ED Electronic</strong> , your ultimate destination for learning about electronic devices. Our mission is to provide learners with in-depth knowledge and hands-on experience with various technologies such as laptops, tablets, mobiles, and more. Whether you're a beginner looking to understand the basics or an advanced learner aiming to master device-related concepts, our platform offers comprehensive resources to guide you every step of the way.
 
@@ -34,29 +43,30 @@
 
         Our team of experts and educators is dedicated to creating high-quality, reliable learning materials. We foster a supportive community where learners can exchange ideas, ask questions, and collaborate. Join us today to start your journey towards mastering the technology that powers our everyday lives!
     </div>
+    <div id="feedback">
     <center style="font-size: 25px;"><h1>Feedback</h1></center>
     <center>
-        <div class="container">
-        <h2>We Value Your Feedback</h2>
+        <div id="container">
+        <h2>We Value Your Feedback!</h2>
         <form>
             <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="name" style="font-size: 30px;">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required style="width: 100%;">
             </div>
 
             <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="email" style="font-size: 30px;">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%;">
             </div>
 
             <div class="form-group">
-                <label for="contact">Your Contact Number</label>
-                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+                <label for="contact" style="font-size: 30px;">Your Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" require style="width: 100%;">
             </div>
 
             <div class="form-group">
-                <label for="feedback">Your Feedback</label>
-                <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts" required></textarea>
+                <label for="feedback" style="font-size: 30px;">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts" required ></textarea>
             </div>
 
             <div class="button-container">
@@ -67,6 +77,44 @@
         </form>
     </div>
     </center>
+    </div>
+    <div id="contact">
+    <center>
+        <div style="font-size: 25px;">
+            <h1>Contact Us</h1>
+        </div>
+    </center>
+    <div class="contact-us">
+        
+        <p style="font-size: 20px;">We'd love to hear from you! Reach out to us through any of the following ways:</p>
+        <p style="font-size: 20px;"><a href="mailto:support@edelectronic.com"> Email: support@edelectronic.com</a></p>
+        <p style="font-size: 20px;"><a href="tel:+4733378901">Phone: +91 1234567890</a></p>
+        <p style="font-size: 20px;"><a href="geo: Address: 123 Tech Lane, Silicon City, Bangalore, 634512 ">Address: 123 Tech Lane, Silicon City, Bangalore, 634512</a></p>
+    
+        <form>
+            <div class="form-group">
+                <label for="name" style="font-size: 30px;" >Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required style="width: 100%;">
+            </div>
+    
+            <div class="form-group">
+                <label for="email" style="font-size: 30px;">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%;">
+            </div>
+    
+            <div class="form-group">
+                <label for="message" style="font-size: 30px;">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required ></textarea>
+            </div>
+    
+            <div class="button-container">
+                <input type="submit" value="Submit" class="submit-btn" style="width: 20%;">
+                <input type="reset" value="Reset" class="reset-btn">
+            </div>
+        </form>
+    </div>
+    </div>
+    
 </body>
 
 <footer style="color: rgb(0, 0, 0); background-color: lightslategray;">
@@ -84,7 +132,7 @@
         </center>
     </h1>
     <center>
-        <p>&copy; Jayacharan , 23BDS0065</p>
+        <p style="margin: 0px; font-size: 25px;">&copy; Jayacharan , 23BDS0065</p>
     </center>
 </footer>
 </html>
