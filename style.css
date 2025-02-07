@@ -17,7 +17,7 @@ footer{
     height: 100px;
     color: white;
     margin: 0px;
-    background-color: #f15151;
+    background-color: #0E0004;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@ footer{
 .bar
 {
     text-align: center;
-    background-color: #ffd97f;
+    background-color: #48ACF0;
     padding-top: 1em;
     padding-bottom: 1em;
     display: flex;
@@ -53,10 +53,10 @@ footer{
 }
 
 a:hover{
-    color: rgb(190, 190, 190);
+    color: #0E0004;
 }
 a:active{
-    color: black;
+    color: rgb(212, 212, 212);
 }
 
 h2{
@@ -64,22 +64,23 @@ h2{
 }
 
 a:visited{
-    color: rgb(67, 170, 255);
+    color: #0E0004;
 }
 
 a:link{
-    color: rgb(124, 63, 255);
+    color: #0E0004;
 }
 
 
 .bar_content
 {
     font-size: 25px;
-    padding: 0.5em;
+    padding: 0.2em;
     margin: 0px;
+    margin-right: 10px;
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 60px;
+    background-color: #E8F7EE;
+    border-radius: 7px;
 }
 
 .image{
