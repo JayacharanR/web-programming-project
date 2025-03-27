@@ -115,6 +115,62 @@
         </form>
     </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("form").forEach(function (form) {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+    
+                    const name = form.querySelector('input[name="name"]')?.value;
+                    const email = form.querySelector('input[name="email"]')?.value;
+                    const contact = form.querySelector('input[name="contact"]')?.value;
+    
+                    const nameRegex = /^[A-Za-z\s]+$/;
+                    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                    const contactRegex = /^[6-9]\d{9}$/;  
+    
+                    let valid = true;
+    
+                    // Name Validation
+                    if (name && !nameRegex.test(name)) {
+                        showError(form, "Invalid Name: Only alphabets and spaces allowed.");
+                        valid = false;
+                    }
+    
+                    // Email Validation
+                    if (email && !emailRegex.test(email)) {
+                        showError(form, "Invalid Email: Enter a valid email.");
+                        valid = false;
+                    }
+    
+                    // Contact Validation
+                    if (contact && !contactRegex.test(contact)) {
+                        showError(form, "Invalid Contact: 10-digit Indian number required.");
+                        valid = false;
+                    }
+    
+                    if (valid) {
+                        alert("Form submitted successfully!");
+                        form.submit(); 
+                    }
+                });
+            });
+        });
+    
+        function showError(form, message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.style.color = 'red';
+            errorDiv.innerText = message;
+            form.prepend(errorDiv);
+            
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 3000);
+        }
+    </script>
+    
+    
     
 </body>
 

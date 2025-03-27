@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>label{
-        font-size: 25px;
-        display:contents;
-        padding: 0px;
-        margin: 0;
-    }</style>
+    <style>label{font-size: 25px;display:contents;padding: 0px;margin: 0;}</style>
 </head>
-
 <header>
     <center>
         <div class="title">
@@ -31,146 +25,133 @@
         <span class="bar_content"><a href="about.html">About</a></span>
     </div>
 </header>
-
 <body>
     <div style="padding-left: 200px;padding-right: 200px;padding-top: 20px;padding-bottom: 20px;">
         <div class="Quiz" style="padding-left: 350px;padding-right: 50px;border-color: black;border-width: 10px;border-style: double;box-shadow: 0 14px 18px rgba(0, 0, 0, 5); background-color: rgb(254, 253, 250);">
-        <h1 style="font-size: 50px;text-decoration: underline;"><strong>Quiz</strong></h1>
-        <form style="font-size: 25px;" action="main.html">
-            <h2>Q1. What is the CPU also called as?</h2>
-            
-                <input type="radio" name="q1" required>
-                <label for="q1">Central Processing Unit</label>
-                <br>
-                <input type="radio" name="q1" required>
-                <label for="q1">Control Panel Unit</label>
-                <br>
-                <input type="radio" name="q1" required>
-                <label for="q1">Central Performance Unit</label>
-                <br>
-                <input type="radio" name="q1" required>
-                <label for="q1">Computer Power Unit</label>
-                <br>
-        
+            <h1 style="font-size: 50px;text-decoration: underline;"><strong>Quiz</strong></h1>
+            <h2 id="timer" style="color: rgb(0, 106, 255); font-size: 50px;"></h2>
+            <form id="quizForm" style="font-size: 25px;">
+                <h2>Q1. What is the CPU also called as?</h2>
+                <input type="radio" name="q1" value="Central Processing Unit"> Central Processing Unit<br>
+                <input type="radio" name="q1" value="Control Panel Unit"> Control Panel Unit<br>
+                <input type="radio" name="q1" value="Central Performance Unit"> Central Performance Unit<br>
+                <input type="radio" name="q1" value="Computer Power Unit"> Computer Power Unit<br>
+
                 <h2>Q2. What does RAM stand for?</h2>
-                <input type="radio" name="q2" required>
-                <label for="q2">Random Access Memory</label>
-                <br>
-                <input type="radio" name="q2" required>
-                <label for="q2">Read Access Memory</label>
-                <br>
-                <input type="radio" name="q2" required>
-                <label for="q2">Rapid Access Memory</label>
-                <br>
-                <input type="radio" name="q2" required>
-                <label for="q2">Random Auxiliary Memory</label>
-                <br>
-        
+                <input type="radio" name="q2" value="Random Access Memory"> Random Access Memory<br>
+                <input type="radio" name="q2" value="Read Access Memory"> Read Access Memory<br>
+                <input type="radio" name="q2" value="Rapid Access Memory"> Rapid Access Memory<br>
+                <input type="radio" name="q2" value="Random Auxiliary Memory"> Random Auxiliary Memory<br>
+
                 <h2>Q3. What is the primary function of a battery in a device?</h2>
-                <input type="radio" name="q3" required>
-                <label for="q3">To store data</label>
-                <br>
-                <input type="radio" name="q3" required>
-                <label for="q3">To provide power</label>
-                <br>
-                <input type="radio" name="q3" required>
-                <label for="q3">To process information</label>
-                <br>
-                <input type="radio" name="q3" required>
-                <label for="q3">To manage files</label>
-                <br>
-        
+                <input type="radio" name="q3" value="To store data"> To store data<br>
+                <input type="radio" name="q3" value="To provide power"> To provide power<br>
+                <input type="radio" name="q3" value="To process information"> To process information<br>
+                <input type="radio" name="q3" value="To manage files"> To manage files<br>
+
                 <h2>Q4. Which component of a device displays visual output?</h2>
-                <input type="radio" name="q4" required>
-                <label for="q4">Processor</label>
-                <br>
-                <input type="radio" name="q4" required>
-                <label for="q4">Battery</label>
-                <br>
-                <input type="radio" name="q4" required>
-                <label for="q4">Display</label>
-                <br>
-                <input type="radio" name="q4"required>
-                <label for="q4">Storage</label>
-                <br>
-        
+                <input type="radio" name="q4" value="Processor"> Processor<br>
+                <input type="radio" name="q4" value="Battery"> Battery<br>
+                <input type="radio" name="q4" value="Display"> Display<br>
+                <input type="radio" name="q4" value="Storage"> Storage<br>
+
                 <h2>Q5. What does OS stand for in computing?</h2>
-                <input type="radio" name="q5"required>
-                <label for="q5">Operating System</label>
-                <br>
-                <input type="radio" name="q5"required>
-                <label for="q5">Optimal System</label>
-                <br>
-                <input type="radio" name="q5" required>
-                <label for="q5">Organizational Software</label>
-                <br>
-                <input type="radio" name="q5" required>
-                <label for="q5">Operating Software</label>
-                <br>
-        
+                <input type="radio" name="q5" value="Operating System"> Operating System<br>
+                <input type="radio" name="q5" value="Optimal System"> Optimal System<br>
+                <input type="radio" name="q5" value="Organizational Software"> Organizational Software<br>
+                <input type="radio" name="q5" value="Operating Software"> Operating Software<br>
+
                 <h2>Q6. Which of the following is a type of storage?</h2>
-                <input type="radio" name="q6" required>
-                <label for="q6">HDD</label>
-                <br>
-                <input type="radio" name="q6" required>
-                <label for="q6">SSD</label>
-                <br>
-                <input type="radio" name="q6" required>
-                <label for="q6">Both HDD and SSD</label>
-                <br>
-                <input type="radio" name="q6" required>
-                <label for="q6">None of the above</label>
-                <br>
-        
+                <input type="radio" name="q6" value="HDD"> HDD<br>
+                <input type="radio" name="q6" value="SSD"> SSD<br>
+                <input type="radio" name="q6" value="Both HDD and SSD"> Both HDD and SSD<br>
+                <input type="radio" name="q6" value="None of the above"> None of the above<br>
+
                 <h2>Q7. What does the clock speed of a processor determine?</h2>
-                <input type="radio" name="q7" required>
-                <label for="q7">The processor's speed in executing instructions</label>
-                <br>
-                <input type="radio" name="q7" required>
-                <label for="q7">The amount of storage capacity</label>
-                <br>
-                <input type="radio" name="q7" required>
-                <label for="q7">The display resolution</label>
-                <br>
-                <input type="radio" name="q7"required>
-                <label for="q7">The battery life</label>
-                <br>
-                <br>
+                <input type="radio" name="q7" value="The processor's speed in executing instructions"> The processor's speed in executing instructions<br>
+                <input type="radio" name="q7" value="The amount of storage capacity"> The amount of storage capacity<br>
+                <input type="radio" name="q7" value="The display resolution"> The display resolution<br>
+                <input type="radio" name="q7" value="The battery life"> The battery life<br>
 
-
-                <h2>Q8. Which type of memory is faster but volatile?<br></h2>
-                <select name="q8" id="q8" style="width: 200px;height: 50px;" required>
+                <h2>Q8. Which type of memory is faster but volatile?</h2>
+                <select name="q8" id="q8">
                     <option value="RAM">RAM</option>
                     <option value="ROM">ROM</option>
                     <option value="HDD">HDD</option>
                     <option value="SSD">SSD</option>
                 </select>
 
-        
-                <h2><br>Q9. What does a higher resolution in a display indicate? (Select all that apply)</h2>
-                <input type="checkbox" name="q9" >
-                <label for="q9">More pixels and sharper images</label>
-                <br>
-                <input type="checkbox" name="q9" >
-                <label for="q9">Lower battery consumption</label>
-                <br>
-                <input type="checkbox" name="q9" >
-                <label for="q9">Faster processing speed</label>
-                <br>
-                <input type="checkbox" name="q9" >
-                <label for="q9">Increased storage capacity</label>
-                <br>
+                <h2>Q9. What is the function of a GPU?</h2>
+                <input type="radio" name="q9" value="Rendering graphics"> Rendering graphics<br>
+                <input type="radio" name="q9" value="Storing data"> Storing data<br>
+                <input type="radio" name="q9" value="Managing power"> Managing power<br>
+                <input type="radio" name="q9" value="Cooling the device"> Cooling the device<br>
 
-                <h2>Q10. What is the role of an Operating System (OS)?</h2>
-                <textarea required name="q10" rows="4" cols="50" placeholder="Write your answer here..." style="font-size: 30px; padding: 10px 20px;width: 50%;margin-bottom: 30px;"></textarea>
+                <h2>Q10. Which protocol is used for sending emails?</h2>
+                <input type="radio" name="q10" value="SMTP"> SMTP<br>
+                <input type="radio" name="q10" value="HTTP"> HTTP<br>
+                <input type="radio" name="q10" value="FTP"> FTP<br>
+                <input type="radio" name="q10" value="IMAP"> IMAP<br>
 
-                <br>
-                <input type="submit" value="Submit" style="font-size: 20px; padding: 10px 20px;margin-bottom: 30px;background-color: rgb(31, 196, 31);color: white;">
-                <input type="reset" value="Reset"style="font-size: 20px; padding: 10px 20px;margin-bottom: 30px; background-color: red;color: white;">
-                
+                <br><br>
+                <input type="submit" value="Submit" style="font-size: 20px; padding: 10px 20px; background-color: rgb(31, 196, 31); color: white;">
             </form>
+
+            <h2 id="result" style="font-size: 59px;color:darkblue;"></h2>
         </div>
     </div>
+
+<script>
+    const correctAnswers = {
+        q1: "Central Processing Unit",
+        q2: "Random Access Memory",
+        q3: "To provide power",
+        q4: "Display",
+        q5: "Operating System",
+        q6: "Both HDD and SSD",
+        q7: "The processor's speed in executing instructions",
+        q8: "RAM",
+        q9: "Rendering graphics",
+        q10: "SMTP"
+    };
+
+    document.getElementById("quizForm").onsubmit = function(event) {
+        event.preventDefault();
+        calculateScore();
+    };
+
+    function calculateScore() {
+        let score = 0;
+        for (let key in correctAnswers) {
+            const answer = document.querySelector(`input[name="${key}"]:checked`) || document.getElementById(key);
+            if (answer && answer.value === correctAnswers[key]) {
+                score++;
+            }
+        }
+        document.getElementById("result").innerText = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
+    }
+
+    let timeLeft = 300;
+    const timerDisplay = document.getElementById("timer");
+
+    function updateTimer() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerDisplay.innerText = `Time Remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            document.getElementById("quizForm").submit();
+        } else {
+            timeLeft--;
+        }
+    }
+
+    const timerInterval = setInterval(updateTimer, 1000);
+
+    setTimeout(function () {
+        document.getElementById("quizForm").submit();
+    }, 300000); 
+</script>
 </body>
 <footer style="color: rgb(0, 0, 0); background-color: #b9fefa;">
     <hr>
@@ -189,6 +170,5 @@
     <center>
         <p style="margin: 0px; font-size: 25px;padding-bottom: 10px;">&copy; Jayacharan , 23BDS0065</p>
     </center>
-    
 </footer>
 </html>

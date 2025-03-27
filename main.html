@@ -12,7 +12,8 @@
         <div class="title">
             <img src="Screenshot From 2025-01-19 15-07-46.png" style="border-radius: 40px; padding-left: 8px;">
             <span style="padding-right: 225px;color: white;">Ed Electronic - Empowering Your Tech Knowledge!</span>
-            <span class="bar_content" align="left"><a href="Sign.html">Sign In</a></span>
+            <span class="bar_content" align="left" id="signInBtn"><a href="Sign.html">Sign In</a></span>
+
         </div>
     </center>
     
@@ -60,6 +61,14 @@
             </map>
         </span>
     </center>
+    <script>
+        const currentUser = localStorage.getItem('currentUser');
+        const signInBtn = document.getElementById('signInBtn');
+    
+        if (currentUser) {
+            signInBtn.innerHTML = `<a href="#">Welcome, ${currentUser}</a>`;
+        }
+    </script>
 </body>
 
 <footer style="color: rgb(0, 0, 0); background-color: #b9fefa;">
@@ -79,6 +88,7 @@
     <center>
         <p style="margin: 0px; font-size: 25px;padding-bottom: 10px;">&copy; Jayacharan , 23BDS0065</p>
     </center>
-    
+
+
 </footer>
 </html>
