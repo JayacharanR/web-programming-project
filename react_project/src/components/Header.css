@@ -1,0 +1,36 @@
+/* Header.css */
+.title {
+    font-size: 40px;
+    height: 100px;
+    color: white;
+    margin: 0px;
+    background-color: #0E0004;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    text-align: center;
+    background-color: #48ACF0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .bar_content {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .bar_content a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .bar_content a:hover {
+    color: #ffffff;
+  }

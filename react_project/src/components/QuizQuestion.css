@@ -1,0 +1,22 @@
+.quiz-question {
+    margin-bottom: 20px;
+  }
+  
+  .quiz-question h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .radio-option {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .radio-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .select-option {
+    font-size: 20px;
+    padding: 5px;
+  }
